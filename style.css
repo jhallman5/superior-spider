@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+}
+.logo {
+     text-align: center;
+     
+}
+.username {
+   text-align: center;
+
+}
+.email {
+   text-align: center;
+
+}
+.password{
+    text-align: center;
+
+}
+.submit{
+     text-align: center;
+
+}
