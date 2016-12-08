@@ -1,0 +1,22 @@
+function user(username, email, password) {
+  this.username = username;
+  this.email = email;
+  this.password = password;
+}
+var users =[];
+
+function createUser(newUser) {
+  newUser = new user("U4","U5", "U6")  ;
+  users.push(newUser);
+  return newUser;//Not sure if we need this
+}
+
+
+
+function Print(array) {
+  for(let i = 0; i < array.length; i++){
+    if(user.username = "U4"){
+  console.log(user.username);
+  }
+  }
+}

@@ -6,11 +6,15 @@ function user(username, email, password) {
 var users =[];
 
 function createUser() {
+  var usersInBlock = users;
   var userInBlock = document.getElementById("username");
-  userInblock = new user(document.getElementByID(username),
+
+  userInBlock = new user(document.getElementByID(username),
                                 document.getElementByID(email),
                                 document.getElementByID(password)
                               );
-  return users.push(userInBlock);
+  usersInBlock.push(userInBlock);
+  users = usersInBlock;
+  return users;
 }
 console.log(users);
