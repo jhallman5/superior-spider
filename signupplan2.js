@@ -5,16 +5,12 @@ function user(username, email, password) {
 }
 var users =[];
 
-function createUser() {
-  var usersInBlock = users;
-  var userInBlock = document.getElementById("username");
-
-  userInBlock = new user(document.getElementByID(username),
-                                document.getElementByID(email),
-                                document.getElementByID(password)
-                              );
-  usersInBlock.push(userInBlock);
-  users = usersInBlock;
+$(document).on("click", "#submit",function createUser() {
+  var newUser;
+  newUser = new user($("username").val(),
+                         $("email").val(),
+                         $("password").val()
+                      );
+  users.push(newUser);
   return users;
-}
-console.log(users);
+})
