@@ -5,11 +5,11 @@
 <link rel="stylesheet" href="style.css">
 <title>The Learners Guild</title>
 </head>
-
+<script src="jquery-3.1.1.min.js"></script>
 <body>
 
-<div id="displayed-name">
-  <h2>Displayed Name</h2> 
+<div>
+  <h2 id="displayed-name">"name"</h2>
 </div>
 
 
@@ -30,10 +30,41 @@
 </div>
 
 
-<div id="status"> 
+<div id="status">
 	"display statuses"
 </div>
 
+<script>
+function User(username, email, password) {
+  this.username = username;
+  this.email = email;
+  this.password = password;
+}
+var users =[];
+var loggedInUser;
+
+function createUser(newUser) {
+  var username = "newUser";
+  var email = "emailTest"
+  var password = "passwordTest"
+  newUser = new User(username, email, password);
+  users.push(newUser);
+  loggedInUser = newUser;
+  return users;
+}
+////
+createUser("di")
+
+
+for(let i = 0; i < users.length; i++) {
+   if(users[i].username === loggedInUser.username)
+
+ $('#displayed-name').text(users[i].username)
+ }
+
+
+
+</script>
 
 
 
