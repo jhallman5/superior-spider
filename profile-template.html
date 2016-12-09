@@ -5,7 +5,9 @@
 <link rel="stylesheet" href="style.css">
 <title>The Learners Guild</title>
 </head>
-<script src="jquery-3.1.1.min.js"></script>
+<script src="node_modules/requirejs/require.js"
+  data-main="jquery-3.1.1.min.js"></script>
+<script src="signupplan2.js"></script>
 <body>
 
 <div>
@@ -34,18 +36,7 @@
 	"display statuses"
 </div>
 
-<script>
-var {users} = require('signup.html');
-var {loggedInUser} = require('signup.html');
-for(let i = 0; i < users.length; i++) {
-   if(users[i].username === loggedInUser.username)
 
- $('#displayed-name').text(users[i].username)
- }
-
-
-
-</script>
 
 
 
