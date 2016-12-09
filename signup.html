@@ -2,24 +2,27 @@
 <html>
 <head>
 <meta charset='UTF-8'>
-<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="style.css">
+-->
 <title>The Learners Guild</title>
 </head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
-<script type="text/javascript" src="/signupplan2.js"></script>
+<script src="jquery-3.1.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+-->
 <body>
-<div class="logo"> <img src="/images/LG-logo.png"></div>
-<div class="username">
+<!--<div class="logo"> <img src="/images/LG-logo.png"></div>
+-->
+<div class="username1">
     <input type= "text"
       id="username"
       value="username"
 </div>
-<div class="email">
+<div class="email1">
   <input type="text"
     id="email"
     value="Email Address"
 </div>
-<div class="password">
+<div class="password1">
   <input type="text"
   id="password"
   value="password"
@@ -27,6 +30,26 @@
 
 <button id="submit">submit</button>
 
+<script>
 
+function User(username, email, password) {
+  this.username = username;
+  this.email = email;
+  this.password = password;
+}
+var users =[];
+
+$('#submit').on('click',function createUser() {
+  var newUser;
+  var username = $("#username").val();
+  var email = $("#email").val();
+  var password = $("#username").val();
+  console.log(username);
+  newUser = new User(username, email, password);
+  users.push(newUser);
+  return users;
+})
+
+</script>
 </body>
 </html>

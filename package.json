@@ -1,0 +1,19 @@
+{
+  "name": "superior-spider",
+  "version": "1.0.0",
+  "description": "Description:   - A Facebook style social network which allows users to post status updates, connect with friends, message one another, and view a news feed of their friends' posts.",
+  "main": "signup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhallman5/superior-spider.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhallman5/superior-spider/issues"
+  },
+  "homepage": "https://github.com/jhallman5/superior-spider#readme"
+}
