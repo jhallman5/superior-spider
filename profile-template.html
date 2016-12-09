@@ -35,27 +35,8 @@
 </div>
 
 <script>
-function User(username, email, password) {
-  this.username = username;
-  this.email = email;
-  this.password = password;
-}
-var users =[];
-var loggedInUser;
-
-function createUser(newUser) {
-  var username = "newUser";
-  var email = "emailTest"
-  var password = "passwordTest"
-  newUser = new User(username, email, password);
-  users.push(newUser);
-  loggedInUser = newUser;
-  return users;
-}
-////
-createUser("di")
-
-
+var {users} = require('signup.html');
+var {loggedInUser} = require('signup.html');
 for(let i = 0; i < users.length; i++) {
    if(users[i].username === loggedInUser.username)
 

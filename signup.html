@@ -7,8 +7,7 @@
 <title>The Learners Guild</title>
 </head>
 <script src="jquery-3.1.1.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
--->
+<script src="signupplan2.js"></script>
 <body>
 <!--<div class="logo"> <img src="/images/LG-logo.png"></div>
 -->
@@ -27,27 +26,11 @@
   id="password"
   value="password"
 </div>
-
+<a href= "profile-template.html">
 <button id="submit">submit</button>
-
+</a>
 <script>
 
-function User(username, email, password) {
-  this.username = username;
-  this.email = email;
-  this.password = password;
-}
-var users =[];
-
-$('#submit').on('click',function createUser() {
-  var newUser;
-  var username = $("#username").val();
-  var email = $("#email").val();
-  var password = $("#username").val();
-  newUser = new User(username, email, password);
-  users.push(newUser);
-  return users;
-})
 
 </script>
 </body>
