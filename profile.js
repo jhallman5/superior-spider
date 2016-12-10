@@ -8,14 +8,16 @@
 
 
 //var list_of_users = users;
+var users1 = localStorage.getItem(users);
+var loggedInUser2 = localStorage.getItem(loggedInUser);
 
-require(['jquery-3.1.1.min.js', 'signupplan2.js'], function(){
+require(['jquery-3.1.1.min.js'], function(){
 
 
-for(let i = 0; i < users.length; i++) {
-   if(users[i].username === loggedInUser.username)
+for(let i = 0; i < users1.length; i++) {
+   if(users1[i].username === loggedInUser2.username)
 
- $('#displayed-name').text(users[i].username);
+ $('#displayed-name').text(users1[0].username);
  }
 
 

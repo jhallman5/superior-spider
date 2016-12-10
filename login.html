@@ -5,7 +5,10 @@
 <link rel="stylesheet" href="style.css">
 <title>The Learners Guild</title>
 </head>
+<script src="node_modules/requirejs/require.js"
+  data-main="jquery-3.1.1.min.js"></script>
 
+<script src="login.js"></script>
 <body>
 <div class="logo"> <img src="/images/LG-logo.png"></div>
 
@@ -21,13 +24,14 @@
   id="password-auth"
   value="Password"</div>
 
-<div class="sign-up">
-  <button>sign up</button>
-</div>
 
-<div class="login">
-  <button>login</button>
-</div>
+<a href="signup.html"> 
+<button>sign up</button>
+</a>
+
+
+ <button id="auth">login</button>
+
 
 </body>
 </html>

@@ -31,3 +31,5 @@ $('#submit').on('click',function createUser() {
 
 
  });
+
+localStorage.setItem(users, loggedInUser);
